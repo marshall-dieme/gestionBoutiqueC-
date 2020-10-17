@@ -1,0 +1,14 @@
+Erreur lors de l'Ajout dans la base de donnée			04/07/2020 16:19:08
+---------------------------------------------------------------------------------------
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   à System.Data.Entity.Internal.InternalContext.SaveChanges()
+   à System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   à System.Data.Entity.DbContext.SaveChanges()
+   à BoutiqueWin.Service1.AddProduit(Produit produit) dans C:\Users\Marshall\source\repos\BoutiqueWin\Service1.svc.cs:ligne 66
+Erreur lors de l'Ajout dans la base de donnée			04/07/2020 16:23:45
+---------------------------------------------------------------------------------------
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   à System.Data.Entity.Internal.InternalContext.SaveChanges()
+   à System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   à System.Data.Entity.DbContext.SaveChanges()
+   à BoutiqueWin.Service1.AddProduit(Produit produit) dans C:\Users\Marshall\source\repos\BoutiqueWin\Service1.svc.cs:ligne 66

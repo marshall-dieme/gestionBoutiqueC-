@@ -1,0 +1,14 @@
+C:\Users\Marshall\source\repos\BoutiqueWin\bin\BoutiqueWin.dll.config
+C:\Users\Marshall\source\repos\BoutiqueWin\bin\BoutiqueWin.dll
+C:\Users\Marshall\source\repos\BoutiqueWin\bin\BoutiqueWin.pdb
+C:\Users\Marshall\source\repos\BoutiqueWin\bin\EntityFramework.dll
+C:\Users\Marshall\source\repos\BoutiqueWin\bin\EntityFramework.SqlServer.dll
+C:\Users\Marshall\source\repos\BoutiqueWin\bin\EntityFramework.xml
+C:\Users\Marshall\source\repos\BoutiqueWin\bin\EntityFramework.SqlServer.xml
+C:\Users\Marshall\source\repos\BoutiqueWin\obj\Debug\BoutiqueWin.csproj.CoreCompileInputs.cache
+C:\Users\Marshall\source\repos\BoutiqueWin\obj\Debug\BoutiqueWin.csproj.CopyComplete
+C:\Users\Marshall\source\repos\BoutiqueWin\obj\Debug\BoutiqueWin.dll
+C:\Users\Marshall\source\repos\BoutiqueWin\obj\Debug\BoutiqueWin.pdb
+C:\Users\Marshall\source\repos\BoutiqueWin\bin\EPPlus.dll
+C:\Users\Marshall\source\repos\BoutiqueWin\bin\EPPlus.xml
+C:\Users\Marshall\source\repos\BoutiqueWin\obj\Debug\BoutiqueWin.csprojAssemblyReference.cache

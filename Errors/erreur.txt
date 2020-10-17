@@ -1,0 +1,42 @@
+﻿Erreur lors de l'Ajout dans la base de donnée			16/07/2020 23:39:34
+---------------------------------------------------------------------------------------
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: La conversion d'un type de données datetime2 en type de données datetime a créé une valeur hors limites.
+L'instruction a été arrêtée.
+   à System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   à System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   à System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   à System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   à System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   à System.Data.SqlClient.SqlDataReader.get_MetaData()
+   à System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   à System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   à System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   à System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   à System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   à System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   à System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   à System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c.<Reader>b__6_0(DbCommand t, DbCommandInterceptionContext`1 c)
+   à System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   à System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   à System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   à System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   à System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   à System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   à System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<>c.<Update>b__21_0(UpdateTranslator ut)
+   à System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   à System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   à System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__153_0()
+   à System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   à System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   à System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass148_0.<SaveChangesInternal>b__0()
+   à System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   à System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   à System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   à System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Data.Entity.Internal.InternalContext.SaveChanges()
+   à System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   à System.Data.Entity.DbContext.SaveChanges()
+   à BoutiqueWin.Service1.AddStock(Stock stock) dans C:\Users\Marshall\source\repos\BoutiqueWin\Service1.svc.cs:ligne 47
